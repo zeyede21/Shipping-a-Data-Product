@@ -30,7 +30,7 @@ This project involves building an end-to-end ELT pipeline that transforms raw Te
   - `fct_messages`: Fact table that stores the processed Telegram messages linked to dimension tables.
 
 ## Project Structure
-
+```
 SHIPPING-A-DATA-PRODUCT/
 │
 ├── data/
@@ -71,18 +71,18 @@ SHIPPING-A-DATA-PRODUCT/
 ├── Dockerfile
 ├── README.md
 ├── requirements.txt
-
+```
 ## How to Run
 
 1. **Setup the Environment:**
    - Ensure PostgreSQL is running and accessible.
    - Activate your Python environment with dbt installed.
    - Configure your `profiles.yml` for dbt with connection details.
-
+  ```
 2. **Run dbt Models:**
    ```bash
-   dbt run --select stg_telegram_messages dim_channels dim_dates fct_messages
-
+   - dbt run --select stg_telegram_messages dim_channels dim_dates fct_messages
+   ```
 ## Run Tests (if any):**
 
      dbt test
