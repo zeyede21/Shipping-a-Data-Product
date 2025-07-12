@@ -1,0 +1,65 @@
+# Python bytecode and virtual env
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+zenv/
+.env
+.env.*
+
+# VS Code, PyCharm, OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# DBT artifacts
+telegram_dbt/target/
+telegram_dbt/logs/
+telegram_dbt/dbt_packages/
+telegram_dbt/manifest.json
+telegram_dbt/run_results.json
+telegram_dbt/catalog.json
+
+# Logs
+logs/
+*.log
+
+# Raw and intermediate data (optional to ignore)
+data/telegram_messages/
+data/images/
+
+# Docker
+*.pid
+*.tar
+*.log
+docker-compose.override.yml
+
+# SQLite or test DB files
+*.sqlite3
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+secrets/
+config/*.yml
+
+# Ignore compiled DBT files or anything unnecessary from runs
+*.dbt
+
+# General temporary files
+*.tmp
+*.bak
+*.swp
+*.out
+
+# Coverage or test reports (if applicable)
+coverage.xml
+htmlcov/
+.cache/
+
