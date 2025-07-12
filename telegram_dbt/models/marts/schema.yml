@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_channels
+    description: "Dimension table with Telegram channel info"
+    columns:
+      - name: channel_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_dates
+    description: "Dimension table for calendar dates"
+    columns:
+      - name: date_id  # Changed from date_day to date_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_messages
+    description: "Fact table with all telegram messages"
+    columns:
+      - name: message_id
+        tests:
+          - not_null
+          - unique
+      - name: channel_id  # Updated to match the actual column
+        tests:
+          - not_null
+      - name: date_id  # Ensure this aligns with the dim_dates table
+        tests:
+          - not_null

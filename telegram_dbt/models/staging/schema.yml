@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: telegram_dbt
+    database: telegram_dbt
+    schema: zeyede
+    tables:
+      - name: stg_telegram_messages
+        description: "Raw messages loaded from JSON files"
