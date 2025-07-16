@@ -12,7 +12,7 @@ models:
   - name: dim_dates
     description: "Dimension table for calendar dates"
     columns:
-      - name: date_id  # Changed from date_day to date_id
+      - name: date_id # Changed from date_day to date_id
         tests:
           - not_null
           - unique
@@ -24,9 +24,14 @@ models:
         tests:
           - not_null
           - unique
-      - name: channel_id  # Updated to match the actual column
+      - name: channel_id # Updated to match the actual column
         tests:
           - not_null
-      - name: date_id  # Ensure this aligns with the dim_dates table
+      - name: date_id # Ensure this aligns with the dim_dates table
         tests:
           - not_null
+
+sources:
+  - name: zeyede
+    tables:
+      - name: yolo_detections
