@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_image_detections
+    description: YOLO-enriched object detections per Telegram message
+    columns:
+      - name: message_id
+        tests: [not_null, relationships: {to: ref('fct_messages'), field: message_id}]
+      - name: detected_object_class
+      - name: confidence_score

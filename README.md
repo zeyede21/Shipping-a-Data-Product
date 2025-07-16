@@ -31,46 +31,7 @@ This project involves building an end-to-end ELT pipeline that transforms raw Te
 
 ## Project Structure
 ```
-SHIPPING-A-DATA-PRODUCT/
-│
-├── data/
-│   ├── telegram_messages/
-│   │   └── 2025-07-12/
-│   │       ├── CheMed123.json
-│   │       ├── lobelia4cosmetics.json
-│   │       └── tikvahpharma.json
-│   └── images/
-│       └── 2025-07-12/
-│           ├── CheMed123
-│           ├── lobelia4cosmetics
-│          
-│
-├── logs/
-│   ├── dbt.log
-│   └── scrape_telegram.log
-│
-├── src/
-│   ├── __pycache__/
-│   ├── load_env.py
-│   └── scrape_telegram.py
-│
-├── telegram_dbt/
-│   ├── analyses/
-│   ├── models/
-│   │   ├── marts/
-│   │   └── staging/
-│   ├── snapshots/
-│   ├── tests/
-│   ├── dbt_project.yml
-│   ├── target/
-│   └── README.md
-│
-├── .env
-├── .gitignore
-├── docker-compose.yml
-├── Dockerfile
-├── README.md
-├── requirements.txt
+![alt text](image.png)
 ```
 ## How to Run
 
